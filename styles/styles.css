@@ -296,7 +296,23 @@ h2 {
 }
 
 .wrapper {
-  max-width: 1280px;
+  max-width: 1400px;
   width: 90%;
   margin: 0 auto;
+}
+
+footer {
+  padding-top: 100px;
+}
+footer p {
+  text-align: center;
+  color: white;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: yellow;
 }
