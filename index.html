@@ -8,26 +8,84 @@
     <link rel="stylesheet" href="./styles/styles.css" />
   </head>
   <body>
-  <header></header>
+    <header id="home">
+      <div class="wrapper">
+        <nav>
+          <p>FJ.</p>
+          <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="name">
+          <h1>Faheen Jean-Pierre</h1>
+          <p>Front end web developer</p>
+          <a href="#contact">Get in touch</a>
+        </div>
+      </div>
+    </header>
 
-  <section class="about">
+    <section id="about">
+      <div class="wrapper">
+        <h2>About me</h2>
+        <p>
+          (Football player 🏈 turned developer 👨🏾‍💻) Lorem ipsum dolor, sit amet
+          consectetur adipisicing elit. Sunt quisquam exercitationem porro
+          veritatis accusantium incidunt magnam deserunt! Eius, quas iure fugiat
+          in distinctio minus necessitatibus vel consequuntur nesciunt ab
+          deleniti officiis repudiandae atque ea labore accusantium saepe
+          voluptatem, blanditiis, fuga harum corrupti ratione. Ea, animi. Sint
+          dolores perspiciatis quae ipsum?
+        </p>
+      </div>
+    </section>
 
-  </section>
+    <section id="skills">
+      <div class="wrapper">
+        <h2>Skills</h2>
+        <div class="skills-icons"></div>
+      </div>
+    </section>
 
-  <section class="skills">
+    <section id="projects">
+      <div class="wrapper">
+        <h2>Projects</h2>
+      </div>
+    </section>
 
-  </section>
+    <section id="contact">
+      <div class="wrapper">
+        <h2>Get in touch</h2>
+        <div class="social-icons"></div>
+        <p>Let's grab a coffee?</p>
+        <form
+              action="#"
+              method="POST"
+              class="contactForm"
+              name="contactForm"
+            >
+              <label for="name" class="sr-only">Name</label>
+              <input type="text" id="name" placeholder="Name" />
 
-  <section class="projects">
+              <label for="email" class="sr-only">Email</label>
+              <input type="email" id="email" placeholder="Email" />
 
-  </section>
+              <label for="message" class="sr-only">Message</label>
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+                placeholder="Message for me"
+              ></textarea>
+              <button>Submit</button>
+      </div>
+    </section>
 
-  <section class="contact">
-
-  </section>
-
-  <footer>
-    <p>Built in 2022 by Faheen Jean-Pierre.</p>
-  </footer>
+    <footer>
+      <p>Built in 2022 by Faheen Jean-Pierre.</p>
+    </footer>
   </body>
 </html>
