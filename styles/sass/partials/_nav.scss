@@ -1,8 +1,31 @@
 // Nav styles
-nav ul {
+nav {
+    p,
+    a {
+        color: $secondary;
+        font-size: 1.3rem
+    }
+    
+
+    ul {
     justify-content: flex-end;
+
+    li {
+        padding: 0 10px;
+        }
+    }
+
+    p {
+        text-align: center;
+        width: 3rem;
+        border: 2px solid $secondary;
+        // padding-top: 50px;
+        margin-top: 0;
+    }
 }
 
-nav ul li {
-    padding: 0 10px;
+a:hover,
+a:focus {
+    opacity: 0.5;
+    color: $tertiary;
 }

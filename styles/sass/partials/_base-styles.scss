@@ -7,6 +7,16 @@
 
 body {
   color: white;
+
+  .lightish {
+    background-color: $primary;
+    color: $secondary;
+  }
+  
+  .reddish {
+    background-color: $secondary;
+    color: $primary;
+  }
 }
 
 ul {

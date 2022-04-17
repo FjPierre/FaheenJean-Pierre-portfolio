@@ -1,9 +1,11 @@
 // Footer styles
 footer {
-
+    background: $secondary;
     p {
+        margin: 0;
         text-align: center;
-        color: white;
+        color: $solid-white;
+        padding: 5px 0;
     }
 
 }

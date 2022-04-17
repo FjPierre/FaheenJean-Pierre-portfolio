@@ -2,4 +2,24 @@
 header  {
     background: $primary;
     height: 100vh;
+
+    h1 {
+        padding-top: 80px;
+    }
+
+    .front-end {
+        font-size: 2rem;
+    }
+
+    .name a {
+        margin-top: 10px;
+        padding: 15px 20px;
+        color: $primary;
+        background-color: $secondary;
+    }
+}
+
+.name {
+    color: $secondary;
+    text-align: center;
 }

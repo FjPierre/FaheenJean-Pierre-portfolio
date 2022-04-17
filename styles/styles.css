@@ -275,12 +275,14 @@ html {
 
 body {
   font-size: 1rem;
-  background-color: black;
 }
 
 h1 {
   font-size: 4.5rem;
-  text-align: center;
+}
+
+h2 {
+  font-size: 2.8rem;
 }
 
 .wrapper {
@@ -291,6 +293,14 @@ h1 {
 
 body {
   color: white;
+}
+body .lightish {
+  background-color: #faf6e8;
+  color: #670520;
+}
+body .reddish {
+  background-color: #670520;
+  color: #faf6e8;
 }
 
 ul {
@@ -304,22 +314,116 @@ a {
   text-decoration: none;
 }
 
+nav p,
+nav a {
+  color: #670520;
+  font-size: 1.3rem;
+}
 nav ul {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
-
 nav ul li {
   padding: 0 10px;
+}
+nav p {
+  text-align: center;
+  width: 3rem;
+  border: 2px solid #670520;
+  margin-top: 0;
+}
+
+a:hover,
+a:focus {
+  opacity: 0.5;
+  color: #851d25;
 }
 
 header {
   background: #faf6e8;
   height: 100vh;
 }
+header h1 {
+  padding-top: 80px;
+}
+header .front-end {
+  font-size: 2rem;
+}
+header .name a {
+  margin-top: 10px;
+  padding: 15px 20px;
+  color: #faf6e8;
+  background-color: #670520;
+}
 
-footer p {
+.name {
+  color: #670520;
   text-align: center;
-  color: white;
+}
+
+section {
+  padding: 25px 0;
+}
+section h2,
+section p {
+  text-align: center;
+}
+
+.form-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.form-container input,
+.form-container textarea {
+  padding: 10px;
+  color: #670520;
+  background-color: transparent;
+}
+.form-container button {
+  background-color: #670520;
+  color: #faf6e8;
+  margin-top: 15px;
+  padding: 10px 0;
+  width: 13%;
+}
+
+.input-one,
+.input-two {
+  margin: 15px 0;
+  border-bottom: 2px solid #851d25;
+}
+
+input,
+button {
+  border: none;
+}
+
+textarea {
+  border: 2px solid #851d25;
+  resize: none;
+}
+
+.input-one,
+.input-two,
+textarea {
+  width: 50%;
+}
+
+footer {
+  background: #670520;
+}
+footer p {
+  margin: 0;
+  text-align: center;
+  color: #fff;
+  padding: 5px 0;
 }
