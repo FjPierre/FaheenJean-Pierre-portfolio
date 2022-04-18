@@ -7,3 +7,32 @@ section {
         text-align: center;
     }
 }
+
+#projects a {
+    padding: 15px;
+    color: $secondary;
+    background-color: $primary;
+}
+
+#skills {
+    text-align: center;
+   
+    ul {
+        justify-content: space-between; 
+        flex-wrap: wrap;
+    }
+
+    li {
+        padding: 15px;
+    }
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    i {
+        padding: 0 15px;
+    }
+}

@@ -274,15 +274,36 @@ html {
 }
 
 body {
+  font-family: "Athiti", sans-serif;
   font-size: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Lora", serif;
 }
 
 h1 {
   font-size: 4.5rem;
+  font-weight: 500;
+  font-style: italic;
 }
 
 h2 {
   font-size: 2.8rem;
+}
+
+#skills i {
+  font-size: 2.2rem;
+}
+#skills p {
+  font-size: 0.8rem;
+}
+
+.social-icons i {
+  font-size: 2rem;
 }
 
 .wrapper {
@@ -314,12 +335,21 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+}
+
+nav {
+  border: 1px solid red;
+  padding-top: 25px;
+}
 nav p,
 nav a {
   color: #670520;
   font-size: 1.3rem;
 }
 nav ul {
+  margin-top: 0;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
@@ -329,15 +359,22 @@ nav ul li {
 }
 nav p {
   text-align: center;
-  width: 3rem;
+  padding: 5px;
   border: 2px solid #670520;
   margin-top: 0;
 }
 
-a:hover,
-a:focus {
+ul p {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+header a:hover,
+header a:focus {
   opacity: 0.5;
   color: #851d25;
+  border-bottom: 2px solid #851d25;
 }
 
 header {
@@ -368,6 +405,42 @@ section {
 section h2,
 section p {
   text-align: center;
+}
+
+#projects a {
+  padding: 15px;
+  color: #670520;
+  background-color: #faf6e8;
+}
+
+#skills {
+  text-align: center;
+}
+#skills ul {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+#skills li {
+  padding: 15px;
+}
+
+.social-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.social-icons i {
+  padding: 0 15px;
 }
 
 .form-container {

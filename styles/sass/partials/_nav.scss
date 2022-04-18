@@ -1,5 +1,8 @@
 // Nav styles
 nav {
+    border: 1px solid red;
+    padding-top: 25px;
+
     p,
     a {
         color: $secondary;
@@ -8,7 +11,8 @@ nav {
     
 
     ul {
-    justify-content: flex-end;
+        margin-top: 0;
+        justify-content: flex-end;
 
     li {
         padding: 0 10px;
@@ -17,15 +21,19 @@ nav {
 
     p {
         text-align: center;
-        width: 3rem;
+        padding: 5px;
         border: 2px solid $secondary;
-        // padding-top: 50px;
         margin-top: 0;
     }
 }
 
-a:hover,
-a:focus {
+ul p {
+    justify-content: flex-start;
+}
+
+header a:hover,
+header a:focus {
     opacity: 0.5;
     color: $tertiary;
+    border-bottom: 2px solid $tertiary;
 }

@@ -7,6 +7,9 @@
     <title>FJ's Portfolio</title>
     <script src="https://kit.fontawesome.com/a6669560d1.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Athiti&family=Lora:ital,wght@0,400;1,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/styles.css" />
   </head>
   <body>
@@ -14,8 +17,9 @@
       <div class="wrapper">
         <nav>
           <!-- Mettre le p tag dans le ul met tout sur la mm ligne -->
-          <p>FJ.</p>
+          
           <ul class="nav-links">
+            <p>FJ.</p>
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
@@ -32,6 +36,9 @@
 
     <section id="about" class="reddish">
       <div class="wrapper">
+        <div class="fah">
+        <img src="./assets/fah.JPG" alt="a picture of me">
+        </div>
         <h2>About me</h2>
         <p>
           Hey y'all, it's FJ, a Football player 🏈 turned Front-End Developer 👨🏾‍💻 based out of Mississauga in the Greater Toronto Area. I love coding and creating accessible and user-friendly apps. Ah, et aussi je parle français si jamais vous voulez prendre un café, écrivez-moi.
@@ -73,11 +80,21 @@
               <p>FIREBASE</p>
             </li>
             <li>
-
+              <i class="fa-solid fa-gears"></i>
+              <p>REST APIs</p>
             </li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li>
+              <i class="fa-solid fa-terminal"></i>
+              <p>TERMINAL</p>
+            </li>
+            <li>
+              <i class="fa-solid fa-mobile-screen"></i>
+              <p>RESPONSIVE DESIGN</p>
+            </li>
+            <li>
+              <i class="fa-solid fa-universal-access"></i>
+              <p>ACCESSIBLITY</p>
+            </li>
             <li></li>
           </ul>
         </div>
@@ -87,6 +104,30 @@
     <section id="projects" class="reddish">
       <div class="wrapper">
         <h2>Projects</h2>
+        <div class="projects-list">
+          <div class="proj-one">
+            <div class="image-container-one">
+            <img src="./assets/under-the-sea.png" alt="image of project one under-the-sea">
+            </div>
+            <h4>Under the sea</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam cupiditate illo velit laudantium praesentium, culpa quam. Soluta in odit dignissimos.</p>
+            <ul>
+              <li><a href="https://under-the-sea-project1.netlify.app/">Live site</a></li>
+              <li><a href="https://github.com/FjPierre/Faheen-Andy-Jean-Pierre-Project-one">View repo</a></li>
+            </ul>
+          </div>
+          <div class="proj-two">
+            <h4>What to eat?</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis animi exercitationem commodi eos, illum quae.</p>
+            <ul>
+              <li><a href="https://what-to-eat-project.netlify.app/">Live site</a></li>
+              <li><a href="https://github.com/What-to-Eat-project/what-to-eat">View repo</a></li>
+            </ul>
+            <div class="image-container-two">
+              <img src="./assets/what-to-eat.png" alt="image of project two what-to-eat">
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -95,10 +136,10 @@
         <h2>Get in touch</h2>
         <div class="social-icons">
           <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li><a href="https://www.linkedin.com/in/faheen-jean-pierre/"><i class="fa-brands fa-linkedin"></i></a></li>
+            <li><a href="https://github.com/FjPierre"><i class="fa-brands fa-github"></i></li></a>
+            <li><a href="https://twitter.com/FJcodes"><i class="fa-brands fa-twitter"></i></a></li>
+            <li> <a href=""></a> <i class="fa-solid fa-envelope"></i></li>
           </ul>
         </div>
         <p>Let's grab a coffee?</p>
