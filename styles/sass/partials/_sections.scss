@@ -8,10 +8,39 @@ section {
     }
 }
 
-#projects a {
+#projects {
+    h4 {
+        text-align: center;
+    }
+    .proj-one,
+    .proj-two {
+        display: flex;
+        padding-bottom: 20px;
+        border-bottom: 2px solid $solid-white;
+    }
+
+    .proj-one {
+        margin-bottom: 100px;
+    }
+
+    a {
     padding: 15px;
     color: $secondary;
     background-color: $primary;
+    }
+}
+
+.proj-links {
+    padding-top: 15px;
+
+    li:first-child {
+        padding-right: 10px;
+    }
+}
+
+.languages {
+    color: $solid-white;
+    text-transform: uppercase;
 }
 
 #skills {
@@ -33,6 +62,13 @@ section {
     align-items: center;
 
     i {
+        color: $secondary;
         padding: 0 15px;
     }
+}
+
+.social-icons i:hover,
+.social-icons i:focus {
+    opacity: 0.7;
+    color: $tertiary;
 }

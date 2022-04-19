@@ -5,6 +5,11 @@ header  {
 
     h1 {
         padding-top: 80px;
+        width: 100%;
+        border-right: 1px solid $secondary;
+        white-space: nowrap;
+        animation: typing 3.5s steps(30, end),
+        blink .5s step-end infinite;
     }
 
     .front-end {

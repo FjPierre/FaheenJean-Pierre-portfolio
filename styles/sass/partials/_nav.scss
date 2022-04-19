@@ -1,9 +1,11 @@
 // Nav styles
 nav {
-    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding-top: 25px;
 
-    p,
+    h3,
     a {
         color: $secondary;
         font-size: 1.3rem
@@ -19,16 +21,12 @@ nav {
         }
     }
 
-    p {
+    h3 {
         text-align: center;
         padding: 5px;
         border: 2px solid $secondary;
         margin-top: 0;
     }
-}
-
-ul p {
-    justify-content: flex-start;
 }
 
 header a:hover,
