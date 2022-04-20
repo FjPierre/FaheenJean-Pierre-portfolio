@@ -1,1 +1,14 @@
 // Media queries styles
+@media (max-width: 800px) {
+    
+    
+    .fah img {
+        width: 50%;
+    }
+
+    .input-one,
+    .input-two,
+    textarea {
+        width: 100%;
+    }
+}

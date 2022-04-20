@@ -9,9 +9,23 @@ section {
     }
 }
 
-// Skills section styles
+// Me section styles
+.me {
+    .fah {
+        // align-self: center;
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
 
-#skills {
+    img {
+        width: 25%;
+    }
+}
+
+// Tools section styles
+
+.tools {
     text-align: center;
    
     ul {
@@ -26,7 +40,7 @@ section {
 
 // Projects section styles
 
-#projects {
+.work {
     .image-container-one,
     .image-container-two,
     .text-container {
@@ -60,12 +74,17 @@ section {
     }
 }
 
+.work ul {
+    justify-content: center;
+    padding-left: 0;
+}
+
 .languages {
     color: $solid-white;
     text-transform: uppercase;
 }
 
-// Contact section styles
+// Reach section styles
 
 .social-icons {
     display: flex;
