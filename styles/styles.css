@@ -319,9 +319,15 @@ body .lightish {
   background-color: #faf6e8;
   color: #670520;
 }
+body .lightish h2 {
+  border-bottom: 2px solid #670520;
+}
 body .reddish {
   background-color: #670520;
   color: #faf6e8;
+}
+body .reddish h2 {
+  border-bottom: 2px solid #faf6e8;
 }
 
 ul {
@@ -337,6 +343,11 @@ a {
 
 img {
   max-width: 100%;
+}
+
+input,
+button {
+  border: none;
 }
 
 nav {
@@ -386,7 +397,7 @@ header {
 header h1 {
   padding-top: 80px;
   width: 100%;
-  border-right: 1px solid #670520;
+  border-right: 2px solid #670520;
   white-space: nowrap;
   -webkit-animation: typing 3.5s steps(30, end), blink 0.5s step-end infinite;
           animation: typing 3.5s steps(30, end), blink 0.5s step-end infinite;
@@ -410,18 +421,38 @@ section {
   padding: 25px 0;
 }
 section h2,
+section h4,
 section p {
   text-align: center;
 }
 
-#projects h4 {
+#skills {
   text-align: center;
+}
+#skills ul {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+#skills li {
+  padding: 15px;
+}
+
+#projects .image-container-one,
+#projects .image-container-two,
+#projects .text-container {
+  width: 50%;
 }
 #projects .proj-one,
 #projects .proj-two {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-bottom: 20px;
   border-bottom: 2px solid #fff;
 }
@@ -444,20 +475,6 @@ section p {
 .languages {
   color: #fff;
   text-transform: uppercase;
-}
-
-#skills {
-  text-align: center;
-}
-#skills ul {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-#skills li {
-  padding: 15px;
 }
 
 .social-icons {
@@ -506,7 +523,7 @@ section p {
   color: #faf6e8;
   margin-top: 15px;
   padding: 10px 0;
-  width: 13%;
+  width: 50%;
 }
 
 .input-one,
@@ -514,10 +531,9 @@ section p {
   margin: 15px 0;
   border-bottom: 2px solid #851d25;
 }
-
-input,
-button {
-  border: none;
+.input-one input,
+.input-two input {
+  width: 100%;
 }
 
 textarea {

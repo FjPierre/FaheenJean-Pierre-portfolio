@@ -3,18 +3,40 @@ section {
     padding: 25px 0;
 
     h2,
+    h4,
     p {
         text-align: center;
     }
 }
 
-#projects {
-    h4 {
-        text-align: center;
+// Skills section styles
+
+#skills {
+    text-align: center;
+   
+    ul {
+        justify-content: space-between; 
+        flex-wrap: wrap;
     }
+
+    li {
+        padding: 15px;
+    }
+}
+
+// Projects section styles
+
+#projects {
+    .image-container-one,
+    .image-container-two,
+    .text-container {
+        width: 50%;
+    }
+
     .proj-one,
     .proj-two {
         display: flex;
+        align-items: center;
         padding-bottom: 20px;
         border-bottom: 2px solid $solid-white;
     }
@@ -43,18 +65,7 @@ section {
     text-transform: uppercase;
 }
 
-#skills {
-    text-align: center;
-   
-    ul {
-        justify-content: space-between; 
-        flex-wrap: wrap;
-    }
-
-    li {
-        padding: 15px;
-    }
-}
+// Contact section styles
 
 .social-icons {
     display: flex;

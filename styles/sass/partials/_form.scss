@@ -16,7 +16,7 @@
         color: $primary;
         margin-top: 15px;
         padding: 10px 0;
-        width: 13%;
+        width: 50%;
     }
 }
 
@@ -24,11 +24,10 @@
 .input-two {
     margin: 15px 0;
     border-bottom: 2px solid $tertiary;
-}
 
-input,
-button {
-    border: none;
+    input {
+        width: 100%;
+    }
 }
 
 textarea {
