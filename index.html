@@ -9,26 +9,33 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Athiti&family=Lora:ital,wght@0,400;1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;1,500&family=Montserrat:ital,wght@0,400;1,500&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="./styles/styles.css" />
   </head>
   <body>
     <header id="home" class="lightish">
       <div class="wrapper">
         <nav>
-          <!-- Mettre le p tag dans le ul met tout sur la mm ligne -->
           <h3>FJ.</h3>
+          <input id="nav-toggle" type="checkbox" />
           <ul class="nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
+          <label for="nav-toggle" class="hamburger-menu">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </label>
         </nav>
         <div class="name">
-          <h1>Faheen Jean-Pierre.</h1>
-          <p class="front-end">Front-End Developer</p>
-          <a href="#contact">Get in touch</a>
+          <h1>Hi, it's Faheen</h1>
+            <div class="typewriter">
+            <p class="front-end">Front-End Developer</p>
+            </div>
+            <a href="#contact">Get in touch</a>
         </div>
       </div>
     </header>
@@ -39,9 +46,11 @@
         <img src="./assets/fah.JPG" alt="a picture of me">
         </div>
         <h2>About me</h2>
+        <div class="moi">
         <p>
-          Hey y'all my name is Faheen but please call me FJ. I'm a football player 🏈 turned Front-End Developer 👨🏾‍💻 based out of Mississauga in the Greater Toronto Area. I love coding and creating accessible and user-friendly apps. Ah, et aussi je parle français si jamais vous voulez prendre un café, écrivez-moi.
+          Hey y'all my name is Faheen but please call me FJ. I'm a football player 🏈 turned Front-End Developer 👨🏾‍💻 based out of Mississauga in the Greater Toronto Area. I love creating accessible and user-friendly apps. Outside of coding, I'm a dad, a football coach, a foodie and always looking for new hiking trails in the GTA. Ah, et aussi je parle français si jamais vous voulez prendre un café, écrivez-moi.
         </p>
+      </div>
       </div>
     </section>
 
@@ -110,7 +119,7 @@
             </div>
             <div class="text-container">
               <h4>Under the sea</h4>
-              <p class="languages">html, sass</p>
+              <p class="languages">html, sass, responsive design</p>
               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam cupiditate illo velit laudantium praesentium, culpa quam. Soluta in odit dignissimos.</p>
               <div class="proj-links">
               <ul>
@@ -151,19 +160,22 @@
             <li><a href="mailto:faheemandyjp@gmail.com"><i class="fa-solid fa-envelope"></i></a></li>
           </ul>
         </div>
-        <p>Let's grab a coffee?</p>
+        <p>Hire me or let's grab a coffee and talk about how Spider-man is the coolest Marvel superhero?</p>
         <div class="form-container">
-        <div class="input-one">
-          <form action="#" method="POST"></form>
+          <form action="#" 
+          method="POST"
+          class="contact-form">
+        <!-- <div class="input-one"> -->
+          
           <label for="name" class="sr-only">Name</label>
           <input type="text" id="name" placeholder="Name" />
-        </div>
+        <!-- </div> -->
 
-        <div class="input-two">
-          <form action="#" method="POST"></form>
+        <!-- <div class="input-two"> -->
+          
           <label for="email" class="sr-only">Email</label>
           <input type="email" id="email" placeholder="Email" />
-        </div>
+        <!-- </div> -->
             
 
             <label for="message" class="sr-only">Message</label>
@@ -176,11 +188,13 @@
             ></textarea>
           
               <button>Talk soon 🤟🏾</button>
+            </form>
             </div>
     </section>
 
     <footer>
       <p>Built in 2022 by Faheen Jean-Pierre.</p>
     </footer>
+    <script src="app.js"></script>
   </body>
 </html>

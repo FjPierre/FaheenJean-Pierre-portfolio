@@ -1,8 +1,14 @@
 // Form Styles
 .form-container {
     display: flex;
-    flex-direction: column;
+    // flex-direction: column;
     align-items: center;
+
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
 
     input,
     textarea {
@@ -39,5 +45,12 @@ textarea {
 .input-two,
 textarea {
     width: 50%;
+}
+
+button:hover,
+button:focus {
+    border: 2px solid $solid-black;
+    background-color: $primary;
+    color: $secondary;
 }
 

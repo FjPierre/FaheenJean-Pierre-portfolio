@@ -29,10 +29,29 @@ nav {
     }
 }
 
+#nav-toggle {
+    position: absolute;
+    top: -100px;
+}
+
+.hamburger-menu {
+    display: none;
+    position: absolute;
+    right: 5%;
+
+    .line {
+        width: 30px;
+        height: 4px;
+        background-color: $secondary;
+        margin: 5px;
+        transition: all 0.3s ease-in-out;
+    }
+}
+
 
 header a:hover,
 header a:focus {
-    opacity: 0.5;
+    opacity: 0.8;
     color: $tertiary;
     border-bottom: 2px solid $tertiary;
 }

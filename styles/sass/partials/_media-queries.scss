@@ -1,14 +1,68 @@
 // Media queries styles
-@media (max-width: 800px) {
-    
-    
+@media (max-width: 1100px) {
     .fah img {
         width: 50%;
+    }
+}
+
+@media (max-width: 800px) {
+    .nav-links {
+        position: fixed;
+        z-index: 9;
+        left: 0;
+        right: 0;
+        top: 100px;
+        bottom: 100%;
+        width: auto;
+        height: auto;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: $primary;
+        overflow: hidden;
+        transition: all 0.5s ease-in-out;
+    }
+
+    nav :checked~.nav-links {
+        bottom: -50px;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    nav :checked~.hamburger-menu .line:nth-child(1) {
+        transform: translateY(10px) rotate(225deg);
+    }
+
+    nav :checked~.hamburger-menu .line:nth-child(2) {
+        opacity: 0;
+    }
+
+    nav :checked~.hamburger-menu .line:nth-child(3) {
+        transform: translateY(-10px) rotate(-225deg);
     }
 
     .input-one,
     .input-two,
     textarea {
         width: 100%;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .projects-list {
+        .image-container-one,
+        .image-container-two,
+        .text-container {
+            width: 100%;
+        }
+        .proj-one {
+        flex-direction: column;
+        }
+        .proj-two {
+            flex-direction: column-reverse;
+        }
     }
 }

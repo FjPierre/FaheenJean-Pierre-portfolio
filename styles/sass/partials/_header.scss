@@ -1,27 +1,36 @@
 // Header styles
 header  {
     background: $primary;
-    height: 100vh;
+    height: 90vh;
 
     h1 {
-        padding-top: 80px;
+        padding-top: 100px;
         width: 100%;
-        border-right: 2px solid $secondary;
-        white-space: nowrap;
-        animation: typing 3.5s steps(30, end),
-        blink .5s step-end infinite;
     }
 
     .front-end {
         font-size: 2rem;
+        line-height: 2.2rem;
+        margin-bottom: 125px;
     }
 
     .name a {
-        margin-top: 10px;
         padding: 15px 20px;
         color: $primary;
         background-color: $secondary;
     }
+}
+
+.typewriter  {
+    margin: auto;
+    width: 50%;
+    p {
+        flex-wrap: wrap;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 3.5s steps(40, end),
+    blink-carret .75s step-end infinite;
+}
 }
 
 .name {
