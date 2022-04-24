@@ -44,3 +44,12 @@ input,
 button {
   border: none;
 }
+
+.name a:hover,
+.name a:focus,
+.form-container button:hover,
+.form-container button:focus {
+  border: 2px solid $secondary;
+  background-color: $primary;
+  color: $secondary;
+}

@@ -298,6 +298,12 @@ h2 {
   font-size: 2.8rem;
 }
 
+header .front-end {
+  font-size: 2rem;
+  line-height: 2.2rem;
+  margin-bottom: 70px;
+}
+
 #skills i {
   font-size: 2.2rem;
 }
@@ -351,6 +357,15 @@ img {
 input,
 button {
   border: none;
+}
+
+.name a:hover,
+.name a:focus,
+.form-container button:hover,
+.form-container button:focus {
+  border: 2px solid #670520;
+  background-color: #faf6e8;
+  color: #670520;
 }
 
 nav {
@@ -414,18 +429,15 @@ header a:focus {
 
 header {
   background: #faf6e8;
-  height: 90vh;
+  height: 100vh;
 }
 header h1 {
-  padding-top: 100px;
+  padding-top: 80px;
   width: 100%;
 }
-header .front-end {
-  font-size: 2rem;
-  line-height: 2.2rem;
-  margin-bottom: 125px;
-}
-header .name a {
+
+.name a {
+  margin-bottom: 100px;
   padding: 15px 20px;
   color: #faf6e8;
   background-color: #670520;
@@ -525,6 +537,11 @@ section p {
   text-transform: uppercase;
 }
 
+.hire p {
+  margin: auto;
+  width: 50%;
+}
+
 .social-icons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -552,9 +569,7 @@ section p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  margin: auto;
 }
 .form-container .contact-form {
   display: -webkit-box;
@@ -564,11 +579,16 @@ section p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
 }
 .form-container input,
 .form-container textarea {
   padding: 10px;
+  margin: 15px 0;
+  border-bottom: 2px solid #851d25;
   color: #670520;
   background-color: transparent;
 }
@@ -595,17 +615,9 @@ textarea {
   resize: none;
 }
 
-.input-one,
-.input-two,
+input,
 textarea {
   width: 50%;
-}
-
-button:hover,
-button:focus {
-  border: 2px solid #000;
-  background-color: #faf6e8;
-  color: #670520;
 }
 
 footer {
@@ -614,6 +626,7 @@ footer {
 footer p {
   margin: 0;
   text-align: center;
+  font-size: 0.8rem;
   color: #fff;
   padding: 5px 0;
 }
@@ -704,10 +717,21 @@ footer p {
             transform: translateY(-10px) rotate(-225deg);
   }
 
-  .input-one,
-.input-two,
-textarea {
+  input,
+textarea,
+.form-container button {
     width: 100%;
+  }
+}
+@media (max-width: 654px) {
+  header h1 {
+    padding-top: 0;
+  }
+
+  header .front-end {
+    margin-bottom: 35px;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
   }
 }
 @media (max-width: 600px) {

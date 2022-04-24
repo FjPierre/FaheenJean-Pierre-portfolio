@@ -5,6 +5,10 @@
     }
 }
 
+@media (max-width: 935px) {
+    
+}
+
 @media (max-width: 800px) {
     .nav-links {
         position: fixed;
@@ -43,12 +47,24 @@
         transform: translateY(-10px) rotate(-225deg);
     }
 
-    .input-one,
-    .input-two,
-    textarea {
+    input,
+    textarea,
+    .form-container button {
         width: 100%;
     }
 
+}
+
+@media (max-width: 654px) {
+    header h1 {
+        padding-top: 0;
+    }
+
+    header .front-end {
+        margin-bottom: 35px;
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+    }
 }
 
 @media (max-width: 600px) {
