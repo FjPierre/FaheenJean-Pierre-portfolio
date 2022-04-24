@@ -1,13 +1,52 @@
+// Text styles
 html {
   font-size: 125%;
 }
 
 body {
+  font-family: $body-font;
   font-size: 1rem;
-  background-color: black;
+    p{
+      line-height: 1.3rem;
+    }
+  
 }
 
 h1,
+h2,
+h3,
+h4 {
+  font-family: $heading-font;
+}
+
+h1 {
+  font-size: 4.5rem;
+  font-weight: 500;
+  font-style: italic;
+}
+
 h2 {
-  color: white;
+  font-size: 2.8rem;
+}
+
+header .front-end {
+    font-size: 2rem;
+    line-height: 2.2rem;
+    margin-bottom: 70px;
+  }
+
+
+#skills  {
+
+  i {
+    font-size: 2.2rem;
+  }
+  
+  p {
+    font-size: 0.8rem;
+  }
+}
+
+.social-icons i {
+  font-size: 2rem;
 }

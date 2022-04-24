@@ -1,6 +1,37 @@
-.headings {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  padding-top: 25%;
+// Header styles
+header  {
+    background: $primary;
+    height: 100vh;
+
+    h1 {
+        padding-top: 80px;
+        width: 100%;
+    }
+}
+
+.name {
+        a {
+        margin-bottom: 100px;
+        padding: 15px 20px;
+        color: $primary;
+        background-color: $secondary;
+    }
+}
+    
+
+.typewriter  {
+    margin: auto;
+    width: 50%;
+    p {
+        flex-wrap: wrap;
+        overflow: hidden;
+        white-space: nowrap;
+        animation: typing 3.5s steps(40, end),
+        blink-carret .75s step-end infinite;
+    }
+}
+
+.name {
+    color: $secondary;
+    text-align: center;
 }

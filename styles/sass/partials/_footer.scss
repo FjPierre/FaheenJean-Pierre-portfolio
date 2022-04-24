@@ -1,19 +1,12 @@
+// Footer styles
 footer {
-    padding-top: 100px;
-    // background-color: red;
-
+    background: $secondary;
     p {
+        margin: 0;
         text-align: center;
-        color: white;
+        font-size: 0.8rem;
+        color: $solid-white;
+        padding: 5px 0;
     }
 
-    a {
-        text-decoration: none;
-        color: white;
-    }
-
-}
-
-a:hover {
-    color: yellow;
 }

@@ -1,5 +1,55 @@
+// Base styles
 .wrapper {
   max-width: 1400px;
   width: 90%;
   margin: 0 auto;
+}
+
+body {
+  color: white;
+
+  .lightish {
+    background-color: $primary;
+    color: $secondary;
+      h2 {
+        border-bottom: 2px solid $secondary;
+      }
+  }
+  
+  .reddish {
+    background-color: $secondary;
+    color: $primary;
+      h2 {
+        border-bottom: 2px solid $primary;
+      }
+
+  }
+}
+
+
+ul {
+  display: flex;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+input,
+button {
+  border: none;
+}
+
+.name a:hover,
+.name a:focus,
+.form-container button:hover,
+.form-container button:focus {
+  border: 2px solid $secondary;
+  background-color: $primary;
+  color: $secondary;
 }

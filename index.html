@@ -5,22 +5,192 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FJ's Portfolio</title>
+    <script src="https://kit.fontawesome.com/a6669560d1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;1,500&family=Montserrat:ital,wght@0,400;1,500&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="./styles/styles.css" />
   </head>
   <body>
-  <header class="wrapper">
-    <div class="headings">
-    <h1>Welcome to my portfolio 🤟🏾</h1>
-    <h2>✨ Full version coming soon! ✨</h2>
-  </div>
-  </header>
-  
-  <footer>
-    <div class="wrapper">
-    <p>
-      Check out my <a href="https://github.com/FjPierre">Github!</a>
-    </p>
-  </div>
-  </footer>
+    <header id="home" class="lightish">
+      <div class="entete wrapper">
+        <nav>
+          <h3>FJ.</h3>
+          <input id="nav-toggle" type="checkbox" />
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <label for="nav-toggle" class="hamburger-menu">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </label>
+        </nav>
+        <div class="name">
+          <h1>Hey, it's FJ!</h1>
+            <div class="typewriter">
+            <p class="front-end">Front-End Developer</p>
+            </div>
+            <a href="#contact">Get in touch</a>
+        </div>
+      </div>
+    </header>
+
+    <section id="about" class="me reddish">
+      <div class="wrapper">
+        <div class="fah">
+        <img src="./assets/fah.JPG" alt="a picture of me">
+        </div>
+        <h2>About me</h2>
+        <div class="moi">
+        <p>
+          A football player 🏈 turned Front-End Developer 👨🏾‍💻 based out of Mississauga in the Greater Toronto Area. I love creating accessible and user-friendly apps. Outside of coding, I'm a dad, a football coach, a foodie and always looking for new hiking trails in the GTA. Ah, et aussi je parle français si jamais vous voulez prendre un café, écrivez-moi.
+        </p>
+      </div>
+      </div>
+    </section>
+
+    <section id="skills" class="tools lightish">
+      <div class="wrapper">
+        <h2>Skills</h2>
+        <div class="skills-icons">
+          <ul>
+            <li>
+              <i class="devicon-html5-plain"></i>
+              <p>HTML5</p>
+            </li>
+            <li>
+              <i class="devicon-css3-plain"></i>
+              <p>CSS3</p>
+            </li>
+            <li>
+              <i class="devicon-sass-original"></i>
+              <p>SASS</p>
+            </li>
+            <li>
+              <i class="devicon-javascript-plain"></i>
+              <p>JAVASCRIPT</p>
+            </li>
+            <li>
+              <i class="devicon-react-original"></i>
+              <p>REACT</p>
+            </li>
+            <li>
+              <i class="devicon-github-original"></i>
+              <p>GITHUB</p>
+            </li>
+            <li>
+              <i class="devicon-firebase-plain"></i>
+              <p>FIREBASE</p>
+            </li>
+            <li>
+              <i class="fa-solid fa-gears"></i>
+              <p>REST APIs</p>
+            </li>
+            <li>
+              <i class="fa-solid fa-terminal"></i>
+              <p>TERMINAL</p>
+            </li>
+            <li>
+              <i class="fa-solid fa-mobile-screen"></i>
+              <p>RESPONSIVE DESIGN</p>
+            </li>
+            <li>
+              <i class="fa-solid fa-universal-access"></i>
+              <p>ACCESSIBLITY</p>
+            </li>
+            <li></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="work reddish">
+      <div class="wrapper">
+        <h2>Projects</h2>
+        <div class="projects-list">
+          <div class="proj-one">
+            <div class="image-container-one">
+              <img src="./assets/under-the-sea.png" alt="image of project one under-the-sea">
+            </div>
+            <div class="text-container">
+              <h4>Under the sea</h4>
+              <p class="languages">html, sass, responsive design</p>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam cupiditate illo velit laudantium praesentium, culpa quam. Soluta in odit dignissimos.</p>
+              <div class="proj-links">
+              <ul>
+                <li><a href="https://under-the-sea-project1.netlify.app/">Live site</a></li>
+                <li><a href="https://github.com/FjPierre/Faheen-Andy-Jean-Pierre-Project-one">View repo</a></li>
+              </ul>
+            </div>
+          </div>
+          </div>
+          <div class="proj-two">
+            <div class="text-container">
+              <h4>What to eat?</h4>
+              <p class="languages">html, sass, javascript</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis animi exercitationem commodi eos, illum quae.</p>
+              <div class="proj-links">
+              <ul>
+                <li><a href="https://what-to-eat-project.netlify.app/">Live site</a></li>
+                <li><a href="https://github.com/What-to-Eat-project/what-to-eat">View repo</a></li>
+              </ul>
+            </div>
+            </div>
+            <div class="image-container-two">
+              <img src="./assets/what-to-eat.png" alt="image of project two what-to-eat">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="reach lightish">
+      <div class="info-container wrapper">
+        <h2>Get in touch</h2>
+        <div class="social-icons">
+          <ul>
+            <li><a href="https://www.linkedin.com/in/faheen-jean-pierre/"><i class="fa-brands fa-linkedin"></i></a></li>
+            <li><a href="https://github.com/FjPierre"><i class="fa-brands fa-github"></i></a></li>
+            <li><a href="https://twitter.com/FJcodes"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="mailto:faheemandyjp@gmail.com"><i class="fa-solid fa-envelope"></i></a></li>
+          </ul>
+        </div>
+        <div class="hire">
+          <p>Hire me or let's grab a coffee and talk about how Spider-man is the coolest Marvel superhero?</p>
+        </div>
+        <div class="form-container">
+          <form action="mailto:faheemandyjp@gmail.com" 
+          method="POST"
+          class="contact-form">
+          
+          <label for="name" class="sr-only">Name</label>
+          <input type="text" id="name" placeholder="Name" />
+          
+          <label for="email" class="sr-only">Email</label>
+          <input type="email" id="email" placeholder="Email" />
+
+            <label for="message" class="sr-only">Message</label>
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              placeholder="Message"
+            ></textarea>
+          
+              <button>Talk soon 🤟🏾</button>
+            </form>
+            </div>
+    </section>
+
+    <footer>
+      <p>Designed and developed in 2022 by Faheen Jean-Pierre.</p>
+    </footer>
+    <script src="app.js"></script>
   </body>
 </html>

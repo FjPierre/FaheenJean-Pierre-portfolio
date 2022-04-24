@@ -1,0 +1,50 @@
+// Form Styles
+.form-container {
+    display: flex;
+    margin: auto ;
+
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    input,
+    textarea {
+        padding: 10px;
+        margin: 15px 0;
+        border-bottom: 2px solid $tertiary;
+        color: $secondary;
+        background-color: transparent;
+    }
+
+    button {
+        background-color: $secondary;
+        color: $primary;
+        margin-top: 15px;
+        padding: 10px 0;
+        width: 50%;
+    }
+}
+
+.input-one,
+.input-two {
+    margin: 15px 0;
+    border-bottom: 2px solid $tertiary;
+
+    input {
+        width: 100%;
+    }
+}
+
+textarea {
+    border: 2px solid $tertiary;
+    resize: none;
+}
+
+input,
+textarea {
+    width: 50%;
+}
+
