@@ -298,16 +298,24 @@ h2 {
   font-size: 2.8rem;
 }
 
+h3 {
+  font-size: 1.8rem;
+}
+
+.languages {
+  font-size: 0.8rem;
+}
+
 header .front-end {
   font-size: 2rem;
   line-height: 2.2rem;
   margin-bottom: 70px;
 }
 
-#skills i {
+.tools i {
   font-size: 2.2rem;
 }
-#skills p {
+.tools p {
   font-size: 0.8rem;
 }
 
@@ -380,7 +388,7 @@ nav {
           align-items: center;
   padding-top: 25px;
 }
-nav h3,
+nav h4,
 nav a {
   color: #670520;
   font-size: 1.3rem;
@@ -394,7 +402,7 @@ nav ul {
 nav ul li {
   padding: 0 10px;
 }
-nav h3 {
+nav h4 {
   text-align: center;
   padding: 5px;
   border: 2px solid #670520;
@@ -443,10 +451,6 @@ header h1 {
   background-color: #670520;
 }
 
-.typewriter {
-  margin: auto;
-  width: 50%;
-}
 .typewriter p {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -465,7 +469,7 @@ section {
   padding: 25px 0;
 }
 section h2,
-section h4,
+section h3,
 section p {
   text-align: center;
 }
@@ -483,14 +487,15 @@ section p {
   text-align: center;
 }
 .tools ul {
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 .tools li {
   padding: 15px;
+  width: 25%;
 }
 
 .work .image-container-one,
@@ -512,10 +517,15 @@ section p {
 .work .proj-one {
   margin-bottom: 100px;
 }
-.work a {
-  padding: 15px;
-  color: #670520;
+.work .sophia {
+  color: #faf6e8;
+  border-bottom: 2px solid #faf6e8;
+}
+
+.sophia:hover,
+.sophia:focus {
   background-color: #faf6e8;
+  color: #670520;
 }
 
 .proj-links {
@@ -523,6 +533,17 @@ section p {
 }
 .proj-links li:first-child {
   padding-right: 10px;
+}
+.proj-links a {
+  padding: 15px;
+  color: #670520;
+  background-color: #faf6e8;
+}
+.proj-links a:hover,
+.proj-links a:focus {
+  background-color: #670520;
+  color: #faf6e8;
+  border: 2px solid #faf6e8;
 }
 
 .work ul {
@@ -598,6 +619,7 @@ section p {
   margin-top: 15px;
   padding: 10px 0;
   width: 50%;
+  cursor: pointer;
 }
 
 .input-one,
@@ -667,6 +689,11 @@ footer p {
 @media (max-width: 1100px) {
   .fah img {
     width: 50%;
+  }
+}
+@media (max-width: 935px) {
+  .typewriter {
+    width: 100%;
   }
 }
 @media (max-width: 800px) {
@@ -751,5 +778,14 @@ textarea,
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
+  }
+
+  .tools ul {
+    margin: 0;
+    padding: 0;
+  }
+  .tools li {
+    padding: 15px 0;
+    width: 50%;
   }
 }

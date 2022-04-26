@@ -11,12 +11,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;1,500&family=Montserrat:ital,wght@0,400;1,500&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="./styles/styles.css" />
+    <link type="image/png" rel="icon" href="favicon_io/android-chrome-192x192.png">
   </head>
   <body>
     <header id="home" class="lightish">
       <div class="entete wrapper">
         <nav>
-          <h3>FJ.</h3>
+          <h4>FJ.</h4>
           <input id="nav-toggle" type="checkbox" />
           <ul class="nav-links">
             <li><a href="#about">About</a></li>
@@ -48,7 +49,7 @@
         <h2>About me</h2>
         <div class="moi">
         <p>
-          A football player 🏈 turned Front-End Developer 👨🏾‍💻 based out of Mississauga in the Greater Toronto Area. I love creating accessible and user-friendly apps. Outside of coding, I'm a dad, a football coach, a foodie and always looking for new hiking trails in the GTA. Ah, et aussi je parle français si jamais vous voulez prendre un café, écrivez-moi.
+          A football player 🏈 turned Front-End Developer 👨🏾‍💻 based out of Mississauga, ON. I love creating accessible and user-friendly apps. Outside of coding, I'm a dad, a football coach, a foodie and always looking for new hiking trails in the GTA. Ah, et aussi je parle français si jamais vous voulez prendre un café, écrivez-moi.
         </p>
       </div>
       </div>
@@ -103,7 +104,10 @@
               <i class="fa-solid fa-universal-access"></i>
               <p>ACCESSIBLITY</p>
             </li>
-            <li></li>
+            <li>
+              <i class="fa-solid fa-handshake-simple"></i>
+              <p>PAIR PROGRAMMING</p>
+            </li>
           </ul>
         </div>
       </div>
@@ -118,9 +122,9 @@
               <img src="./assets/under-the-sea.png" alt="image of project one under-the-sea">
             </div>
             <div class="text-container">
-              <h4>Under the sea</h4>
-              <p class="languages">html, sass, responsive design</p>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam cupiditate illo velit laudantium praesentium, culpa quam. Soluta in odit dignissimos.</p>
+              <h3>Under the sea</h3>
+              <p class="languages">html / sass / responsive design</p>
+              <p>Multi-page PSD conversion made using a client brief and design files. Responsive across devices.</p>
               <div class="proj-links">
               <ul>
                 <li><a href="https://under-the-sea-project1.netlify.app/">Live site</a></li>
@@ -131,9 +135,9 @@
           </div>
           <div class="proj-two">
             <div class="text-container">
-              <h4>What to eat?</h4>
-              <p class="languages">html, sass, javascript</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis animi exercitationem commodi eos, illum quae.</p>
+              <h3>What to eat?</h3>
+              <p class="languages">html / sass / javascript / rest api</p>
+              <p>What to eat? is a project that required <a href="https://github.com/sophiakim1" class="sophia">Sophia Kim</a> and I to collaborate through paired programming in order to create this app. We used TheMealDB API to allow users to filter recipes by category. When a recipe is selected, it takes the user to a page with all the steps necessary to the make the meal.</p>
               <div class="proj-links">
               <ul>
                 <li><a href="https://what-to-eat-project.netlify.app/">Live site</a></li>
@@ -166,7 +170,8 @@
         <div class="form-container">
           <form action="mailto:faheemandyjp@gmail.com" 
           method="POST"
-          class="contact-form">
+          class="contact-form"
+          data-netlify="true">
           
           <label for="name" class="sr-only">Name</label>
           <input type="text" id="name" placeholder="Name" />
