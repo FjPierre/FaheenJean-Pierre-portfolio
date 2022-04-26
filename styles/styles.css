@@ -482,6 +482,17 @@ section p {
 .me img {
   width: 25%;
 }
+.me .moi a {
+  color: #faf6e8;
+  border-bottom: 2px solid #faf6e8;
+}
+.me .moi a:hover,
+.me .moi a:focus {
+  border: 2px solid #000;
+  background-color: #faf6e8;
+  color: #000;
+  padding: 2px;
+}
 
 .tools {
   text-align: center;
