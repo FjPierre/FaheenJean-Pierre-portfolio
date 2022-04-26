@@ -21,6 +21,19 @@ section {
     img {
         width: 25%;
     }
+
+    .moi a {
+        color: $primary;
+        border-bottom: 2px solid $primary;
+    }
+
+    .moi a:hover,
+    .moi a:focus {
+        border: 2px solid $solid-black;
+        background-color: $primary;
+        color: $solid-black;
+        padding: 2px;
+    }
 }
 
 // Tools section styles
