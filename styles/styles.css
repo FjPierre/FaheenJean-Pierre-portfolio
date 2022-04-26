@@ -400,7 +400,7 @@ nav ul {
           justify-content: flex-end;
 }
 nav ul li {
-  padding: 0 10px;
+  padding: 0 20px;
 }
 nav h4 {
   text-align: center;
@@ -431,7 +431,6 @@ nav h4 {
 header a:hover,
 header a:focus {
   opacity: 0.8;
-  color: #851d25;
   border-bottom: 2px solid #851d25;
 }
 
