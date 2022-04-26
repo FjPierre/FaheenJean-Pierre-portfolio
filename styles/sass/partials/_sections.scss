@@ -3,7 +3,7 @@ section {
     padding: 25px 0;
 
     h2,
-    h4,
+    h3,
     p {
         text-align: center;
     }
@@ -29,12 +29,14 @@ section {
     text-align: center;
 
     ul {
-        justify-content: space-evenly; 
+        justify-content: center;
+        // justify-content: space-evenly; 
         flex-wrap: wrap;
     }
 
     li {
         padding: 15px;
+        width: 25%;
     }
 }
 
@@ -59,18 +61,37 @@ section {
         margin-bottom: 100px;
     }
 
-    a {
-    padding: 15px;
-    color: $secondary;
-    background-color: $primary;
+    .sophia {
+        color: $primary;
+        border-bottom: 2px solid $primary;
     }
 }
+
+.sophia:hover,
+.sophia:focus {
+    background-color: $primary;
+    color: $secondary;
+}
+
 
 .proj-links {
     padding-top: 15px;
 
     li:first-child {
         padding-right: 10px;
+    }
+
+    a {
+        padding: 15px;
+        color: $secondary;
+        background-color: $primary;
+    }
+
+    a:hover,
+    a:focus {
+        background-color: $secondary;
+        color: $primary;
+        border: 2px solid $primary;
     }
 }
 
