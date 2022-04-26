@@ -760,6 +760,11 @@ textarea,
 .form-container button {
     width: 100%;
   }
+
+  .hire p {
+    width: 80%;
+    margin: 15px auto;
+  }
 }
 @media (max-width: 654px) {
   header h1 {
