@@ -514,7 +514,8 @@ section p {
   width: 50%;
 }
 .work .proj-one,
-.work .proj-two {
+.work .proj-two,
+.work .proj-three {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -524,7 +525,9 @@ section p {
   padding-bottom: 20px;
   border-bottom: 2px solid #fff;
 }
-.work .proj-one {
+.work .proj-one,
+.work .proj-two,
+.work .proj-three {
   margin-bottom: 100px;
 }
 .work .sophia {
@@ -782,7 +785,8 @@ textarea,
 .projects-list .text-container {
     width: 100%;
   }
-  .projects-list .proj-one {
+  .projects-list .proj-one,
+.projects-list .proj-three {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
